@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.onboard-main{
+  padding: 5%;
+  height: 100%;
+  ion-fab{
+    bottom: 35px;
+    right: 28px;
+  }
+  .onboard-top{
+    margin-top: 5%;
+    ion-button{
+      font-family: 'sans-serif';
+      text-transform: capitalize;
+      font-size: 0.9rem;
+    }
+  }
+  .onboard-bot{
+    ion-slides{
+      padding-bottom: 22%;
+      --bullet-background: rgb(246 24 67/ 24%)
+    }
+    .onb-img{
+      margin: 9% 0 8%;
+      img{
+        height: 300%;
+        width: 100%;
+        object-fit: cover;
+      }
+      h4{
+        font-size: 1.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 4%;
+      }
+    }
+  }
 }
