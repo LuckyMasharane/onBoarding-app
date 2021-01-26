@@ -1,0 +1,7 @@
+{
+  "name": "onBoarding-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
