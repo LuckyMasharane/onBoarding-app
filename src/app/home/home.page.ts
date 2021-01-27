@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
 
 @Component({
@@ -11,7 +12,7 @@ export class HomePage implements OnInit {
   onboardSlides = [];
   @ViewChild('mainSlides', { static: true}) slides: IonSlides
 
-  constructor() {}
+  constructor( private router: Router) {}
 
   ngOnInit(){
     this.onboardSlides = [
@@ -37,8 +38,7 @@ export class HomePage implements OnInit {
     this.slides.slidePrev();
   }
   skipBtn(){
-    console.log('i will go to home');
-    
+    this.router.navigate(["/login"]); 
   }
   goNext(){
     this.slides.slideNext();
